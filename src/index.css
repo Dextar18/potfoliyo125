@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+  
+}
+
+.black-gradient {
+  background: #000000; /* Black */
+  background: -webkit-linear-gradient(to right, #000000, #D2042D, #001F54); /* Black to Cherry Red to Navy Blue */
+  background: linear-gradient(to right, #000000, #D2042D, #001F54); /* Black to Cherry Red to Navy Blue */
+}
+
+.violet-gradient {
+  background: #D2042D; /* Cherry Red */
+  background: linear-gradient(-90deg, #D2042D 0%, rgba(210, 4, 45, 0) 100%, #001F54 100%);
+  background: -webkit-linear-gradient(-90deg, #D2042D 0%, rgba(210, 4, 45, 0) 100%, #001F54 100%);
+}
+
+.green-pink-gradient {
+  background: #D2042D; /* Cherry Red */
+  background: linear-gradient(90.13deg, #D2042D 1.9%, #F8F9FA 50%, #001F54 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #D2042D 1.9%, #F8F9FA 50%, #001F54 97.5%);
+}
+
+.orange-text-gradient {
+  background: #D2042D; /* Cherry Red */
+  background: -webkit-linear-gradient(to top, #D2042D, #F8F9FA, #001F54);
+  background: linear-gradient(to top, #D2042D, #F8F9FA, #001F54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: #D2042D; /* Cherry Red */
+  background: -webkit-linear-gradient(to top, #D2042D, #F8F9FA, #001F54);
+  background: linear-gradient(to top, #D2042D, #F8F9FA, #001F54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+  background: #D2042D; /* Cherry Red */
+  background: -webkit-linear-gradient(to top, #F8F9FA, #D2042D, #001F54);
+  background: linear-gradient(to top, #F8F9FA, #D2042D, #001F54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: #D2042D; /* Cherry Red */
+  background: -webkit-linear-gradient(to top, #D2042D, #F8F9FA, #001F54);
+  background: linear-gradient(to top, #D2042D, #F8F9FA, #001F54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* canvas- styles */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%, 100% {
+    box-shadow: 0em -2.6em 0em 0em #F8F9FA, 
+                1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                2.5em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.75em 1.75em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                0em 2.5em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em 1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -2.6em 0em 0 0em rgba(255, 0, 0, 0.5), /* Cherry Red */
+                -1.8em -1.8em 0 0em rgba(255, 0, 0, 0.7); /* Cherry Red */
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 0, 0, 0.7), /* Cherry Red */
+                1.8em -1.8em 0 0em #F8F9FA, 
+                2.5em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.75em 1.75em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                0em 2.5em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em 1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -2.6em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em -1.8em 0 0em rgba(255, 0, 0, 0.5); /* Cherry Red */
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 0, 0, 0.5), /* Cherry Red */
+                1.8em -1.8em 0 0em rgba(255, 0, 0, 0.7), /* Cherry Red */
+                2.5em 0em 0 0em #F8F9FA, 
+                1.75em 1.75em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                0em 2.5em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em 1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -2.6em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2); /* Cherry Red */
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.8em -1.8em 0 0em rgba(255, 0, 0, 0.5), /* Cherry Red */
+                2.5em 0em 0 0em rgba(255, 0, 0, 0.7), /* Cherry Red */
+                1.75em 1.75em 0 0em #F8F9FA, 
+                0em 2.5em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em 1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -2.6em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2); /* Cherry Red */
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                2.5em 0em 0 0em rgba(255, 0, 0, 0.5), /* Cherry Red */
+                1.75em 1.75em 0 0em rgba(255, 0, 0, 0.7), /* Cherry Red */
+                0em 2.5em 0 0em #F8F9FA, 
+                -1.8em 1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -2.6em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2); /* Cherry Red */
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                2.5em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.75em 1.75em 0 0em rgba(255, 0, 0, 0.5), /* Cherry Red */
+                0em 2.5em 0 0em rgba(255, 0, 0, 0.7), /* Cherry Red */
+                -1.8em 1.8em 0 0em #F8F9FA, 
+                -2.6em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2); /* Cherry Red */
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                2.5em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.75em 1.75em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                0em 2.5em 0 0em rgba(255, 0, 0, 0.5), /* Cherry Red */
+                -1.8em 1.8em 0 0em rgba(255, 0, 0, 0.7), /* Cherry Red */
+                -2.6em 0em 0 0em #F8F9FA, 
+                -1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2); /* Cherry Red */
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.8em -1.8em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                2.5em 0em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                1.75em 1.75em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                0em 2.5em 0 0em rgba(255, 0, 0, 0.2), /* Cherry Red */
+                -1.8em 1.8em 0 0em rgba(255, 0, 0, 0.5), /* Cherry Red */
+                -2.6em 0em 0 0em rgba(255, 0, 0, 0.7), /* Cherry Red */
+                -1.8em -1.8em 0 0em #F8F9FA; /* Cherry Red */
+  }
+}
+/* Example TailwindCSS config or custom styles */
+.bg-navy-500 { background-color: #1a3d6b; }
+.bg-navy-600 { background-color: whitesmoke; }
+.text-offWhite { color: #f8f8f8; }
+.cherryRed-gradient { 
+  background: linear-gradient(to right, #d62d20, #f56c6c); /* Adjust the cherry red gradient as needed */
+}
